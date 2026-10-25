@@ -10,6 +10,11 @@ FastAPI &nbsp;·&nbsp; SQLAlchemy 2 &nbsp;·&nbsp; Pydantic v2 &nbsp;·&nbsp; Va
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-3b5bdb?style=flat-square)
 ![Tests](https://img.shields.io/badge/tests-19%20passing-16a34a?style=flat-square)
 ![Coverage](https://img.shields.io/badge/coverage-95%25-16a34a?style=flat-square)
+
+<br>
+
+<img src="docs/dashboard.png" alt="Sales Pipeline CRM dashboard showing KPI cards, pipeline by stage, new pipeline by month, team leaderboard and recent activity" width="100%">
+
 </div>
 
 ---
