@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sales Pipeline CRM</title>
+<link rel="stylesheet" href="/static/app.css">
+<script>try{const t=localStorage.getItem('crm-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="logo">◆</span><span>Pipeline<b>CRM</b></span></div>
+    <nav id="nav">
+      <a href="#/dashboard" data-view="dashboard"><span class="ico">▦</span>Dashboard</a>
+      <a href="#/pipeline" data-view="pipeline"><span class="ico">▤</span>Pipeline</a>
+      <a href="#/contacts" data-view="contacts"><span class="ico">☰</span>Contacts</a>
+      <a href="#/activity" data-view="activity"><span class="ico">◷</span>Activity</a>
+    </nav>
+    <div class="side-foot">
+      <a href="/api/reports/deals.csv">⤓ Export deals CSV</a>
+      <a href="/docs" target="_blank" rel="noopener">⌘ API docs</a>
+      <button id="theme" class="ghost" type="button">◐ Toggle theme</button>
+    </div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <div><h1 id="title">Dashboard</h1><p id="subtitle" class="muted"></p></div>
+      <div class="actions">
+        <button class="ghost" id="new-contact" type="button">+ Contact</button>
+        <button class="primary" id="new-deal" type="button">+ New deal</button>
+      </div>
+    </header>
+    <section id="view"></section>
+  </main>
+</div>
+<div id="overlay" hidden></div>
+<aside id="drawer" aria-hidden="true"></aside>
+<dialog id="modal"></dialog>
+<div id="toasts"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
